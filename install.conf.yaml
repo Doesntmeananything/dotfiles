@@ -1,12 +1,14 @@
 - defaults:
     link:
+      create: true
       relink: true
+      force: true
 
 - clean: ['~']
 
 - link:
     ~/.zshrc:
-      force: true
+    ~/.doom.d:  
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
