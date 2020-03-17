@@ -116,7 +116,7 @@ alias elm-proxy="https_proxy=elm.dmy.fr:9999"
 # Doom Emacs helper utility
 alias doom="~/.emacs.d/bin/doom"
 
-# Update system packages and Doom Emacs
-alias up="yay && yay -Yc && ~/.emacs.d/bin/doom upgrade && ~/.emacs.d/bin/doom purge"
+# Update system packages, Doom Emacs, and pull latest changes for orgfiles and dotfiles
+alias up="yay && yay -Yc && ~/.emacs.d/bin/doom upgrade && ~/.emacs.d/bin/doom purge  && git -C ~/org pull && git -C ~/.dotfiles pull"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
