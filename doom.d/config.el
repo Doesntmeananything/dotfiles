@@ -31,7 +31,7 @@
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/"
-      org-roam-directory "~/org/roam/"
+      org-roam-directory (concat org-directory "roam/")
       org-superstar-headline-bullets-list '("☰" "☱" "☲" "☳" "☴" "☵" "☶" "☷" "☷" "☷" "☷"))
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
