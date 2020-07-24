@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
+# ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -79,14 +79,8 @@ plugins=(z zsh-syntax-highlighting zsh-autosuggestions common-aliases git nvm zs
 # User configuration
 
 source $ZSH/oh-my-zsh.sh
-
 source /usr/share/nvm/install-nvm-exec
-
 source <(kubectl completion zsh)
-
-autoload -U compinit && compinit
-
-# export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -133,5 +127,7 @@ alias up="update_system"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Env variables needed to run docker as non-root
-# export PATH=/home/andrey/bin:$PATH
 export DOCKER_HOST=unix:///run/user/1000/docker.sock
+
+# Activate starship prompt
+eval "$(starship init zsh)"
