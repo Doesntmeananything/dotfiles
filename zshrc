@@ -124,7 +124,7 @@ update_system() {
 
 alias up="update_system"
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH:$HOME/.cargo/bin"
 
 # Env variables needed to run docker as non-root
 export DOCKER_HOST=unix:///run/user/1000/docker.sock
