@@ -100,8 +100,6 @@ fi
 
 # Doom Emacs helper utility
 alias doom="~/.emacs.d/bin/doom"
-# Open Emacs with magit for the current git repository
-alias mg='emacsclient -n -c --eval '"'"'(progn (let ((display-buffer-alist `(("^\\*magit: " display-buffer-same-window) ,display-buffer-alist))) (magit-status)) (delete-other-windows))'"' "
 
 # Activate starship prompt
 eval "$(starship init zsh)"
