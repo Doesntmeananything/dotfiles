@@ -17,6 +17,8 @@ This repo contains configuration files for the following tools:
 
 The shell is `zsh` coupled with [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) and several basic plugins.
 
+The terminal emulator is [kitty](https://sw.kovidgoyal.net/kitty/).
+
 ### Emacs
 
 The Emacs framework is [Doom Emacs](https://github.com/hlissner/doom-emacs).
