@@ -104,6 +104,9 @@ alias doom="~/.emacs.d/bin/doom"
 # Activate starship prompt
 eval "$(starship init zsh)"
 
+# Integrate navi for terminal cheatsheets
+eval "$(navi widget zsh)"
+
 # Fnm env setup
 eval "$(fnm env)"
 [ -f "/home/andrey/.ghcup/env" ] && source "/home/andrey/.ghcup/env" # ghcup-env
