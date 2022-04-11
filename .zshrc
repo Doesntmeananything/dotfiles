@@ -101,6 +101,11 @@ fi
 # Doom Emacs helper utility
 alias doom="~/.emacs.d/bin/doom"
 
+# Combine z and fzf and use it as a path for cd
+zd () {
+  cd $(z | fzf | sed 's/^[0-9]\+//g; s/ //g')
+}
+
 # Activate starship prompt
 eval "$(starship init zsh)"
 
