@@ -136,3 +136,6 @@ kitty + complete setup zsh | source /dev/stdin
 # Fzf completions
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
+
+# Broot integration
+source /home/andrey/.config/broot/launcher/bash/br
