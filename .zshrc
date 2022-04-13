@@ -103,7 +103,8 @@ alias doom="~/.emacs.d/bin/doom"
 
 # Combine z and fzf and use it as a path for cd
 zd () {
-  cd $(z | fzf | sed 's/^[0-9]\+//g; s/ //g')
+  [ $# -gt 0 ] && _z "$*" && return
+  cd "$(_z -l 2>&1 | fzf --height 40% --nth 2.. --reverse --inline-info +s --tac --query "${*##-* }" | sed 's/^[0-9,.]* *//')"
 }
 
 # Activate starship prompt
