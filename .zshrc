@@ -68,7 +68,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions fast-syntax-highlighting fzf-tab z)
+plugins=(git zsh-autosuggestions fast-syntax-highlighting fzf-tab)
 
 # Setup zsh-completions
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
@@ -104,13 +104,14 @@ fi
 # Doom Emacs helper utility
 alias doom="~/.emacs.d/bin/doom"
 
-# Combine z and fzf and use it as a path for cd
-zd () {
-  [ $# -gt 0 ] && _z "$*" && return
-  cd "$(_z -l 2>&1 | fzf --height 40% --nth 2.. --reverse --inline-info +s --tac --query "${*##-* }" | sed 's/^[0-9,.]* *//')"
-}
+# Exa mappings
+alias la="exa -lah"
+alias ll="exa -lh"
 
-# Activate starship prompt
+# Setup zoxide
+eval "$(zoxide init zsh)"
+
+# Setup starship prompt
 eval "$(starship init zsh)"
 
 # Fnm env setup
