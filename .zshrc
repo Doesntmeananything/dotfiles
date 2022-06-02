@@ -105,8 +105,8 @@ fi
 alias doom="~/.emacs.d/bin/doom"
 
 # Exa mappings
-alias la="exa -lah"
-alias ll="exa -lh"
+alias las="exa -la"
+alias ll="exa -l"
 
 # Setup zoxide
 eval "$(zoxide init zsh)"
