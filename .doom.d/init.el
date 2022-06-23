@@ -23,7 +23,7 @@
        (company +childframe)           ; the ultimate code completion backend
        ;;helm              ; the *other* search engine for love and life
        ;;ido               ; the other *other* search engine...
-       ;; (ivy +fuzzy +icons +childframe)               ; a search engine for love and life
+       ;;(ivy +fuzzy +icons +childframe)               ; a search engine for love and life
        (vertico +icons)
 
        :ui
@@ -35,7 +35,7 @@
        ;;fill-column       ; a `fill-column' indicator
        hl-todo           ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
        ;;hydra
-       ;; indent-guides     ; highlighted indent columns
+       ;;indent-guides     ; highlighted indent columns
        ;;ligatures         ; ligatures and symbols to make your code pretty again
        ;;minimap           ; show a map of the code on the side
        modeline          ; snazzy, Atom-inspired modeline, plus API
