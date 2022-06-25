@@ -13,5 +13,4 @@ This repo contains configuration files for the following tools:
 | Type     | Tool                                                  |
 |----------|-------------------------------------------------------|
 | Shell    | zsh + [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) |
-| Terminal | [kitty](https://sw.kovidgoyal.net/kitty/)             |
 | Emacs    | [Doom Emacs](https://github.com/hlissner/doom-emacs)  |
