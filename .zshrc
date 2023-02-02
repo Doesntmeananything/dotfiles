@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='nvim'
+  export EDITOR='helix'
 fi
 
 # Compilation flags
@@ -107,6 +107,9 @@ alias doom="~/.emacs.d/bin/doom"
 # Exa mappings
 alias lsa="exa -la"
 alias ll="exa -l"
+
+# Helix
+alias hx="helix"
 
 # Setup zoxide
 eval "$(zoxide init zsh)"
