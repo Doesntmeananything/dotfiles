@@ -137,12 +137,10 @@ _fnm_autoload_hook () {
 add-zsh-hook chpwd _fnm_autoload_hook \
     && _fnm_autoload_hook
 
-# Kitty completions
-kitty + complete setup zsh | source /dev/stdin
-
 # Fzf completions
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 
 # Broot integration
 source /home/andrey/.config/broot/launcher/bash/br
+
