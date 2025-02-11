@@ -104,10 +104,6 @@ fi
 # Doom Emacs helper utility
 alias doom="~/.emacs.d/bin/doom"
 
-# Exa mappings
-alias lsa="exa -la"
-alias ll="exa -l"
-
 # Helix
 alias hx="helix"
 
@@ -144,3 +140,10 @@ source /usr/share/fzf/completion.zsh
 # Broot integration
 source /home/andrey/.config/broot/launcher/bash/br
 
+
+# bun completions
+[ -s "/home/andrey/.bun/_bun" ] && source "/home/andrey/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
